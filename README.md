@@ -18,6 +18,9 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 ## Run Project
 
 - Clone the repo to your preferred location (eg. C:\xampp\htdocs\myproject).
+    ```
+    git clone https://github.com/Abhishek-2502/BlogHub
+    ```
 
 - Download [Xampp](https://www.apachefriends.org/download.html) and [Composer](https://getcomposer.org/download/)
 
@@ -32,7 +35,10 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 - Run below to compile frontend assets.
     ```
-    npm install && npm run dev
+    npm install  
+    ```
+    ```
+    npm run dev
     ```
 
 - Start Apache and MySQL from XAMPP:

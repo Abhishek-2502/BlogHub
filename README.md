@@ -17,23 +17,23 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Run Project Locally
 
-- Clone the repo to your preferred location (eg. C:\xampp\htdocs\myproject).
+1. Clone the repo to your preferred location (eg. C:\xampp\htdocs\myproject).
     ```
     git clone https://github.com/Abhishek-2502/BlogHub
     ```
 
-- Download [Xampp](https://www.apachefriends.org/download.html) and [Composer](https://getcomposer.org/download/)
+2. Download [Xampp](https://www.apachefriends.org/download.html) and [Composer](https://getcomposer.org/download/)
 
     - Go to "C:\xampp\php\php.ini" and Search for ";extension=zip". Uncomment the line by removing the ; so it becomes "extension=zip"
 
-- Open VSCode in cloned Repo.
+3. Open VSCode in cloned Repo.
 
-- Run below to install PHP dependencies.
+4. Run below to install PHP dependencies.
     ```
     composer install 
     ```
 
-- Run below to compile frontend assets.
+5. Run below to compile frontend assets.
     ```
     npm install  
     ```
@@ -41,7 +41,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
     npm run dev
     ```
 
-- Start Apache and MySQL from XAMPP:
+6. Start Apache and MySQL from XAMPP:
 
     - Open XAMPP Control Panel.
 
@@ -49,12 +49,12 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
     - Make sure both are showing “Running” and if MySQL is creating problem, open Task Manager and terminate "mysqld.exe".
 
-- Create a new MySQL database using phpMyAdmin and name it "blogdb"
+7. Create a new MySQL database using phpMyAdmin and name it "blogdb"
     ```
     http://localhost/phpmyadmin/
     ```
 
-- Set up your .env file:
+8. Set up your .env file:
 
     - Copy .env.example to .env.
 
@@ -68,27 +68,27 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
         DB_PASSWORD=
         ```
 
-- Run below to create the database tables. 
+9. Run below to create the database tables. 
     ```
     php artisan migrate
     ```
 
-- Run below to create a symbolic link for image uploads.
+10. Run below to create a symbolic link for image uploads.
     ```
     php artisan storage:link
     ```
 
-- Run below 
+11. Run below 
     ```
     php artisan key:generate
     ```
 
-- Run below to start the Laravel development server.
+12. Run below to start the Laravel development server.
     ```
     php artisan serve
     ```
 
-- Visit below to register a new user and begin creating posts.
+13. Visit below to register a new user and begin creating posts.
     ```
     http://127.0.0.1:8000/register
     ```
@@ -96,10 +96,14 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Run Project via Docker
 
-Build and start all containers
-```
-docker-compose up -d --build
-```
+1. Follow Step 8. 
+
+2. Build and start all containers
+    ```
+    docker-compose up -d --build
+    ```
+
+3. Follow Step 13.
 
 Stop all containers
 ```

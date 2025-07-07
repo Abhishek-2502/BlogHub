@@ -125,6 +125,8 @@ sudo chown -R www-data:www-data storage bootstrap/cache
 sudo chmod -R 775 storage bootstrap/cache
 ```
 
+Add 8000 and 5173 in Security Group(AWS) or Firewall(GCP)
+
 ---
 
 ## Technical Stack
@@ -153,7 +155,7 @@ sudo chmod -R 775 storage bootstrap/cache
 * Composer (PHP Dependency Manager)
 * Node.js & NPM (for frontend build)
 * Jenkins
-* AWS
+* AWS/GCP
 
 ---
 

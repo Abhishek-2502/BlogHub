@@ -109,6 +109,22 @@ Stop all containers
 ```
 docker-compose down
 ```
+
+---
+
+## Deployment
+
+When Deploying change following things:
+
+- **vite.config.js:** Put VM IP instead of localhost in hmr host
+- **.env:** Put VM IP instead of localhost in APP_URL and VITE_DEV_SERVER_URL
+
+Run below command on VM from BlogHub folder:
+```
+sudo chown -R www-data:www-data storage bootstrap/cache
+sudo chmod -R 775 storage bootstrap/cache
+```
+
 ---
 
 ## Technical Stack

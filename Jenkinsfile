@@ -14,9 +14,9 @@ pipeline {
                 echo 'Pruning unused Docker resources before build...'
                 sh '''
                     docker-compose down --remove-orphans --volumes || true
-                    docker container rm -f bloghub-app-1 || true
-                    docker container rm -f bloghub-node-1 || true
-                    docker container rm -f bloghub-db-1 || true
+                    docker container rm -f bloghub_app_1 || true
+                    docker container rm -f bloghub_node_1 || true
+                    docker container rm -f bloghub_db_1 || true
                     docker system prune -f --volumes || true
                 '''
             }

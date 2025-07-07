@@ -1,0 +1,120 @@
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+
+
+## About Laravel
+
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Run Project
+
+- Clone the repo to your preferred location (eg. C:\xampp\htdocs\myproject).
+
+- Download [Xampp](https://www.apachefriends.org/download.html) and [Composer](https://getcomposer.org/download/)
+
+    - Go to "C:\xampp\php\php.ini" and Search for ";extension=zip". Uncomment the line by removing the ; so it becomes "extension=zip"
+
+- Open VSCode in cloned Repo.
+
+- Run below to install PHP dependencies.
+    ```
+    composer install 
+    ```
+
+- Run below to compile frontend assets.
+    ```
+    npm install && npm run dev
+    ```
+
+- Start Apache and MySQL from XAMPP:
+
+    - Open XAMPP Control Panel.
+
+    - Click Start next to Apache and MySQL.
+
+    - Make sure both are showing “Running” and if MySQL is creating problem, open Task Manager and terminate "mysqld.exe".
+
+- Create a new MySQL database using phpMyAdmin and name it "blogdb"
+    ```
+    http://localhost/phpmyadmin/
+    ```
+
+- Set up your .env file:
+
+    - Copy .env.example to .env.
+
+    - Open .env and set your database credentials (Keep below if you followed the above steps exactly):
+        ```
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=blogdb
+        DB_USERNAME=root
+        DB_PASSWORD=
+        ```
+
+- Run below to create the database tables. 
+    ```
+    php artisan migrate
+    ```
+
+- Run below to create a symbolic link for image uploads.
+    ```
+    php artisan storage:link
+    ```
+
+- Run below 
+    ```
+    php artisan key:generate
+    ```
+
+- Run below to start the Laravel development server.
+    ```
+    php artisan serve
+    ```
+
+- Visit below to register a new user and begin creating posts.
+    ```
+    http://127.0.0.1:8000/register
+    ```
+
+---
+
+## Technical Stack
+
+**Frontend**:
+
+* HTML
+* CSS
+
+**Backend**:
+
+* PHP
+* Laravel
+* PostgreSQL
+
+**DevOps**:
+
+* Docker
+* Docker-Compose
+* Jenkins
+* GCP
+
+---
+
+## License
+This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
+
+--- 
+
+## Author 
+Abhishek Rajput

@@ -15,7 +15,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Run Project
+## Run Project Locally
 
 - Clone the repo to your preferred location (eg. C:\xampp\htdocs\myproject).
     ```
@@ -92,7 +92,19 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
     ```
     http://127.0.0.1:8000/register
     ```
+---
 
+## Run Project via Docker
+
+Build and start all containers
+```
+docker-compose up -d --build
+```
+
+Stop all containers
+```
+docker-compose down
+```
 ---
 
 ## Technical Stack
@@ -100,20 +112,28 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 **Frontend**:
 
 * HTML
-* CSS
+* Tailwind CSS
+* JavaScript (ES6+)
+* Vite (Module Bundler)
+* Laravel Vite Plugin
+* Alpine.js
 
 **Backend**:
 
-* PHP
+* PHP 8.x
 * Laravel
-* PostgreSQL
+* MySQL
 
-**DevOps**:
+**DevOps/Tools**:
+
 
 * Docker
-* Docker-Compose
+* Docker Compose
+* Apache (inside Docker)
+* Composer (PHP Dependency Manager)
+* Node.js & NPM (for frontend build)
 * Jenkins
-* GCP
+* AWS
 
 ---
 

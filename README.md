@@ -22,7 +22,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
     git clone https://github.com/Abhishek-2502/BlogHub
     ```
 
-2. Download [Xampp](https://www.apachefriends.org/download.html) and [Composer](https://getcomposer.org/download/)
+2. Download and install [Xampp](https://www.apachefriends.org/download.html) and [Composer](https://getcomposer.org/download/)
 
     - Go to "C:\xampp\php\php.ini" and Search for ";extension=zip". Uncomment the line by removing the ; so it becomes "extension=zip"
 
@@ -58,7 +58,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
     - Copy .env.example to .env.
 
-    - Open .env and set your database credentials (Keep below if you followed the above steps exactly):
+    - Open .env and set your database credentials:
         ```
         DB_CONNECTION=mysql
         DB_HOST=127.0.0.1
